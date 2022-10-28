@@ -1,3 +1,16 @@
+chardet
+click
+cryptography
+distlib
+et-xmlfile
+filelock
 Flask
 Flask-Cors
+importlib-metadata
+isodate
+MarkupSafe
+msrest
+oauthlib
 requests
+requests-oauthlib
+urllib3
