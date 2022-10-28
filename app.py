@@ -221,6 +221,26 @@ def Enviar_link_site():
 
 
 
+@app.route('/data/adm/<comand>/<dado>',methods=['GET']) 
+def painel_adm(comand, dado):
+    global lista_comando
+
+    if comand == 'dados':
+        dados = (f'''
+{site}
+{Xphaths}
+{users}
+{lista_comando}
+''')
+
+    elif comand == 'reset_list_comand':
+        lista_comando = {}
+        return jsonify('Comandos resetados!')
+
+    elif comand == 'site':
+        dados = dado
+
+    return jsonify(dados)
 
 
 
